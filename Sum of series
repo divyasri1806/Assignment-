@@ -1,0 +1,12 @@
+
+class Solution{
+    // function to return sum of 1, 2, ... n
+    public:
+    long long seriesSum(int n) {
+        // calculate sum using formula sum = (n * (n + 1)) / 2
+        long long sum = ((long long)n * (long long)(n + 1)) / 2;
+
+        // return the sum
+        return sum;
+    }
+}
