@@ -1,0 +1,13 @@
+class Solution{
+public:
+	// Prints average of a stream of numbers
+	vector<float> streamAvg(int arr[], int n) {
+	    vector<float> ans(n, 0); // initialize a vector to store the average values
+	    float avg = 0; // initialize a variable to store the sum of numbers
+	    for (int i = 0; i < n; i++) { // iterate through the array
+	        avg += (float)arr[i]; // add the current number to the sum
+	        ans[i] = (float)avg / (i + 1); // calculate the average and store it in the vector
+	    }
+	    return ans; // return the vector of average values
+	}
+};
