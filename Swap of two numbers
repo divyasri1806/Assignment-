@@ -1,0 +1,13 @@
+class Solution{   
+public:
+    // Function to swap two numbers using bitwise XOR
+    pair<int, int> get(int a, int b){
+        // Swapping the values of a and b
+        a = a + b;
+        b = a - b;
+        a = a - b;
+        
+        // Returning the pair of swapped numbers
+        return {a, b};
+    } 
+};
