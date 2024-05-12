@@ -1,0 +1,23 @@
+
+class Solution
+{
+public:
+    // Function to find the median of a vector of integers
+    int find_median(vector<int> v)
+    {
+        // Sorting the vector in ascending order
+        sort(v.begin(),v.end());
+
+        int ans ;
+        // if the size of the vector is odd
+        if(v.size() & 1)
+            // Median is the middle element
+            ans = v[v.size() / 2];
+        // If the size of the vector is even
+        else
+            // Median is the average of the two middle elements
+            ans = (v[v.size() / 2] + v[v.size() / 2 - 1]) / 2;
+        return ans;
+    }
+};
+
