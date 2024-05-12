@@ -1,0 +1,12 @@
+
+
+class Solution
+{
+    public:
+        long long int sum_of_square_evenNumbers(long long int n)
+        {
+            // Using the formula to calculate the sum of squares of even numbers
+            long long int ans = (2 * n * (n + 1) * (2 * n + 1))/3;
+            return ans;
+        }
+};
