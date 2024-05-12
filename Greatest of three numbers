@@ -1,0 +1,8 @@
+class Solution {
+  public:
+    // Function to find greatest of three numbers
+    int greatestOfThree(int A, int B, int C) {
+        // using inbuilt function max to find maximum of A, B, and C
+        return max(A, max(B, C));
+    }
+};
