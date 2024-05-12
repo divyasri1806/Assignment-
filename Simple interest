@@ -1,0 +1,8 @@
+class Solution {
+  public:
+    // Function to calculate simple interest
+    double simpleInterest(int P, int R, int T) {
+        // Applying formula for Simple Interest and returning it as double
+        return double(((double)P * (double)R * double(T)) / 100);
+    }
+};
